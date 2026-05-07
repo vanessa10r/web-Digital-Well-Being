@@ -1156,6 +1156,20 @@ html {
     color:#333;
 }
 
+/* PARA CELULARES */
+@media (max-width: 768px) {
+
+    .menu ul {
+        flex-direction: column; /* menú vertical */
+        align-items: center;
+    }
+
+    .menu a {
+        width: 100%;
+        text-align: center;
+    }
+
+}
 
 
 
