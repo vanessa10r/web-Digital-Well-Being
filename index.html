@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Well-Being</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<div class="header-container">
+
+<div class="logo">
+<img src="imagenes-web/f0b4ffb8-26bf-4693-9f41-32cd80c7.png" alt="Logo de mi web">
+</div>
+
+<nav class="menu">
+<ul>
+
+<li class="has-submenu">
+<a href="#">Home</a>
+    <ul class="submenu">
+        <li><a href="index.html#welcome">Welcome</a></li>
+        <li><a href="index.html#presentation">Project Presentation</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Digital Well-Being</a>
+<ul class="submenu">
+    <li><a href="digital.html#digital-wellbeing">What is digital wellbeing?</a></li>
+    <li><a href="digital.html#healthy-habits">Healthy Habits</a></li>
+    <li><a href="digital.html#digital-tools">Digital tools for productivity</a></li>
+</ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Online Safety</a>
+    <ul class="submenu">
+        <li><a href="online.html#cybersecurity">Cybersecurity</a></li>
+        <li><a href="online.html#self-test">Digital Wellbeing Self Test</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Cyberbullying</a>
+    <ul class="submenu">
+        <li><a href="Ciberacoso.html#what-is-cyberbullying">What is cyberbullying?</a></li>
+        <li><a href="Ciberacoso.html#cyberbullying">Cyberbullying</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Privacy & Data</a>
+    <ul class="submenu">
+        <li><a href="Privacidaddatos.html#personal-data">What is personal data?</a></li>
+        <li><a href="Privacidaddatos.html#data-protection-webinar">Webinar: Best practices in data protection</a></li>
+    </ul>
+</li>
+
+
+<li class="has-submenu">
+    <a href="#">Social Networks</a>
+    <ul class="submenu">
+        <li><a href="redes.html#social-media-use">Responsible use</a></li>
+        <li><a href="redes.html#self-assessment">Final Self-Assessment</a></li>
+    </ul>
+</li>
+
+<li><a href="contacto.html">Contact Us</a></li>
+<li><a href="creditos.html">Credits</a></li>
+
+</ul>
+</nav>
+
+</div>
+</header>
+
+<script>
+document.querySelectorAll('.has-submenu > a').forEach(menu => {
+    menu.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // cerrar otros
+        document.querySelectorAll('.has-submenu').forEach(item => {
+            if(item !== this.parentElement){
+                item.classList.remove('active');
+            }
+        });
+
+        // abrir este
+        this.parentElement.classList.toggle('active');
+    });
+});
+</script>
+
+<!-- HERO / PORTADA -->
+<section class="hero">
+
+<div class="hero-image">
+<img src="imagenes-web/Introdduciion-removebg-preview.png" alt="Digital Wellbeing">
+  <div class="hero-image">
+</div>
+</div>
+
+<div class="hero-text">
+
+<h1>Digital Well-Being</h1>
+
+<p>
+An interactive resource designed to promote healthy digital habits,
+cybersecurity awareness and balanced technology use.
+</p>
+
+<h2 id="welcome">Welcome</h2>
+
+<p>
+Here you will learn about important topics such as digital wellbeing,
+healthy habits, cybersecurity and time management strategies.
+</p>
+
+</div>
+
+</section>
+
+<section id="about" class="about-section">
+
+<div class="about-contenido">
+
+<div class="about-texto">
+
+<h2 id="presentation">Project Presentation</h2>
+
+<p>
+This project aims to help users better understand the digital world, technological tools,
+and practical strategies for using technology responsibly in everyday life.
+</p>
+
+<h3>Objective of the Resource</h3>
+
+<p>
+The main objective is to provide clear concepts and useful recommendations that guide
+users toward responsible digital behavior and a healthier relationship with technology.
+</p>
+
+<h3>Target Audience</h3>
+
+<p>
+This resource is designed especially for university students who want to improve
+their digital wellbeing and develop greater awareness about the use of technology.
+</p>
+
+<h3>How to Use the Application</h3>
+
+<p>
+Users can explore different sections of the application to learn key concepts,
+discover practical tips, and reflect on their own digital habits.
+</p>
+
+</div>
+
+<div class="about-imagen">
+<img src="imagenes-web/images.jpg" alt="Project image">
+</div>
+
+</div>
+
+</section>
+</header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página</title>
+</head>
+</body>
+</html>

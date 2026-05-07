@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Well-Being</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="imagenes-web/f0b4ffb8-26bf-4693-9f41-32cd80c7.png" alt="Logo de mi web">
+        </div>
+
+        <nav class="menu">
+<ul>
+
+<li class="has-submenu">
+<a href="#">Home</a>
+    <ul class="submenu">
+        <li><a href="index.html#welcome">Welcome</a></li>
+        <li><a href="index.html#presentation">Project Presentation</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Digital Well-Being</a>
+<ul class="submenu">
+    <li><a href="digital.html#digital-wellbeing">What is digital wellbeing?</a></li>
+    <li><a href="digital.html#healthy-habits">Healthy Habits</a></li>
+    <li><a href="digital.html#digital-tools">Digital tools for productivity</a></li>
+</ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Online Safety</a>
+    <ul class="submenu">
+        <li><a href="online.html#cybersecurity">Cybersecurity</a></li>
+        <li><a href="online.html#self-test">Digital Wellbeing Self Test</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Cyberbullying</a>
+    <ul class="submenu">
+        <li><a href="Ciberacoso.html#what-is-cyberbullying">What is cyberbullying?</a></li>
+        <li><a href="Ciberacoso.html#cyberbullying">Cyberbullying</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Privacy & Data</a>
+    <ul class="submenu">
+        <li><a href="Privacidaddatos.html#personal-data">What is personal data?</a></li>
+        <li><a href="Privacidaddatos.html#data-protection-webinar">Webinar: Best practices in data protection</a></li>
+    </ul>
+</li>
+
+
+<li class="has-submenu">
+    <a href="#">Social Networks</a>
+    <ul class="submenu">
+        <li><a href="redes.html#social-media-use">Responsible use</a></li>
+        <li><a href="redes.html#self-assessment">Final Self-Assessment</a></li>
+    </ul>
+</li>
+
+<li><a href="contacto.html">Contact Us</a></li>
+<li><a href="creditos.html">Credits</a></li>
+
+</ul>
+</nav>
+
+</div>
+</header>
+
+<script>
+document.querySelectorAll('.has-submenu > a').forEach(menu => {
+    menu.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // cerrar otros
+        document.querySelectorAll('.has-submenu').forEach(item => {
+            if(item !== this.parentElement){
+                item.classList.remove('active');
+            }
+        });
+
+        // abrir este
+        this.parentElement.classList.toggle('active');
+    });
+});
+</script>
+</header>
+
+<section id="privacy-data" class="privacy-section">
+    <div class="privacy-contenido">
+        <h2 id="personal-data">What is personal data?</h2>
+         <p id="presentacion-text">
+            (Esdercom. (2023, 27 julio))."The management of personal data in the university setting does not deviate from the general and common rules that apply to other contexts and other types of processing that are equally protected by the current personal data protection regime in our country. However, it is possible to identify certain scenarios that contribute to the need to address particularities of the university environment, which require a more detailed analysis."
+        </p>
+
+        <p>
+                In the university environment, the protection of personal data is often overlooked, but it is actually fundamental. Every time we share information such as our name, email address, or even academic data, we leave a digital footprint that must be protected. Universities have a responsibility to handle this information securely and respect the privacy of each individual, but it is also important for students to be aware of how they use and protect their own data. Understanding this helps avoid risks such as the misuse of information or potential privacy breaches.
+        </p>
+
+        <p>
+            Universities should be able to handle personal data in order to comply with current data protection regulations in the country, which includes implementing measures to protect the privacy of student and employee information.
+        </p>
+
+        <h2>Data types</h2>
+        <p id="presentacion-text">
+            Universities manage various types of personal information that are crucial to their operation, such as identification, academic, and contact data.
+            When we talk about personal data, not all of it has the same level of importance or risk. Some is basic information, like a name or identification number, which allows us to recognize a person. There is also more private data, such as an address, phone number, or email address, which requires greater care because it can be misused. On the other hand, there is sensitive data, which is the most delicate, as it includes information about health, beliefs, sexual orientation, or personal aspects that could affect someone's privacy if disclosed. Understanding these differences helps us make better decisions about what to share and what to protect in the digital environment.
+        </p>
+    </div>
+
+    <div class="privacy-imagen">
+        <img src="imagenes-web/Tipos-de-datos.png"Imagen datos>
+    </div>
+
+    <div class="privacy-texto">
+         <p>
+            The image illustrates that personal data is not all the same; it is divided into several categories based on its level of privacy. For example, there is public data, which is information that anyone can easily access, such as a name or certain basic details. There is also semi-private data, which is neither entirely intimate nor completely public, as it is usually of interest only to certain groups.
+    
+            On the other hand, there is private data, which is part of each individual's personal life and should not be shared without authorization. Furthermore, the image highlights sensitive data, which is the most delicate because it can directly affect privacy or even lead to discrimination if misused, such as information about health or personal beliefs. Finally, biometric data is also included, which allows for the unique identification of a person, such as fingerprints or facial recognition.   
+        </p>
+
+        <h2 id="private-title">Good practices</h2>
+         <p id="presentacion-text">
+            Talking about best practices in the digital environment isn't just about following rules, but about developing habits that help us use technology safely and responsibly. Small actions like creating strong passwords, not sharing personal information with strangers, and verifying what we see before sharing it can make a big difference. It also means being respectful of others online, since there's a real person behind every screen. Ultimately, it's about being aware of what we do online and making choices that protect ourselves and those around us.
+        </p>
+    </div>
+</section>
+
+<!-- VIDEO MULTIMEDIA -->
+
+<section class="video-section">
+    <h2 id="data-protection-webinar">
+Webinar: Best practices in data protection when using electronic certificates
+</h2>
+
+<iframe 
+src="https://www.youtube.com/embed/n8yfGyO7HsM"
+title="YouTube video player"
+allowfullscreen>
+</iframe>
+</section>
+
+<!-- ===== MINI JUEGO PRIVACY & DATA ===== -->
+
+<section class="juego-privacidad">
+
+    <h2>Test your digital knowledge</h2>
+
+    <p class="pregunta">
+        A classmate uploads a photo of his university ID to social media. 
+        What's the safest thing to do?
+    </p>
+
+    <div class="botones-juego">
+
+        <button onclick="verificarRespuesta('correcta')">
+            Tell them to remove or hide personal information
+        </button>
+
+        <button onclick="verificarRespuesta('incorrecta')">
+            Share the photo with more friends
+        </button>
+
+        <button onclick="verificarRespuesta('incorrecta')">
+            Ignore it because it is not important
+        </button>
+
+    </div>
+
+    <p id="mensajeJuego"></p>
+
+</section>
+
+<script>
+
+function verificarRespuesta(tipo){
+
+    const mensaje =
+    document.getElementById('mensajeJuego');
+
+    if(tipo === 'correcta'){
+
+        mensaje.innerHTML =
+        'Correct. Protecting personal information online helps reduce privacy risks and possible misuse of data.';
+
+    }else{
+
+        mensaje.innerHTML =
+        'That is not the safest option. Personal information should always be protected on social media.';
+    }
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Well-Being</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="imagenes-web/f0b4ffb8-26bf-4693-9f41-32cd80c7.png" alt="Logo de mi web">
+        </div>
+
+        <nav class="menu">
+<ul>
+
+<li class="has-submenu">
+<a href="#">Home</a>
+    <ul class="submenu">
+        <li><a href="index.html#welcome">Welcome</a></li>
+        <li><a href="index.html#presentation">Project Presentation</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Digital Well-Being</a>
+<ul class="submenu">
+    <li><a href="digital.html#digital-wellbeing">What is digital wellbeing?</a></li>
+    <li><a href="digital.html#healthy-habits">Healthy Habits</a></li>
+    <li><a href="digital.html#digital-tools">Digital tools for productivity</a></li>
+</ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Online Safety</a>
+    <ul class="submenu">
+        <li><a href="online.html#cybersecurity">Cybersecurity</a></li>
+        <li><a href="online.html#self-test">Digital Wellbeing Self Test</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Cyberbullying</a>
+    <ul class="submenu">
+        <li><a href="Ciberacoso.html#what-is-cyberbullying">What is cyberbullying?</a></li>
+        <li><a href="Ciberacoso.html#cyberbullying">Cyberbullying</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Privacy & Data</a>
+    <ul class="submenu">
+        <li><a href="Privacidaddatos.html#personal-data">What is personal data?</a></li>
+        <li><a href="Privacidaddatos.html#data-protection-webinar">Webinar: Best practices in data protection</a></li>
+    </ul>
+</li>
+
+
+<li class="has-submenu">
+    <a href="#">Social Networks</a>
+    <ul class="submenu">
+        <li><a href="redes.html#social-media-use">Responsible use</a></li>
+        <li><a href="redes.html#self-assessment">Final Self-Assessment</a></li>
+    </ul>
+</li>
+
+<li><a href="contacto.html">Contact Us</a></li>
+<li><a href="creditos.html">Credits</a></li>
+
+</ul>
+</nav>
+
+</div>
+</header>
+
+<script>
+document.querySelectorAll('.has-submenu > a').forEach(menu => {
+    menu.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // cerrar otros
+        document.querySelectorAll('.has-submenu').forEach(item => {
+            if(item !== this.parentElement){
+                item.classList.remove('active');
+            }
+        });
+
+        // abrir este
+        this.parentElement.classList.toggle('active');
+    });
+});
+</script>
+</header>
+
+<section id="Ciberseguridad" class="cyberbullying-section">
+    <div class="Ciberacoso">
+        
+        <div class="cyberbullying-contenido">
+            <h2 id="cyberbullying">What is cyberbullying?</h2>
+            <p id="presentacion-text">
+                Harassment in universities primarily takes the form of exclusion from study groups, as well as publishing false or private information about a classmate or professor on social media or university forums with the aim of damaging their reputation. We also find harassment in virtual classes, such as offensive comments during learning sessions, interruptions, sharing the class link with others, and malicious individuals sharing their screens to display videos.
+            </p>
+
+            <p>
+                (Layne Bernal, B., Álvarez Massi, P. A., & Luque, J. F. (2019)). "The case of two universities presents the findings of a research project conducted jointly by the Luis Amigó Catholic University, Bogotá Regional Center, and the Miguel de Cervantes University in Santiago, Chile. This study aimed to address cyberbullying practices, healthy lifestyles, and coping strategies among university students. It revealed that some students had experienced cyberbullying and were experiencing health problems due to stress related to their work and academic schedules. To cope, they implemented strategies based on problem-solving, psychological support, cognitive structuring, and spiritual support."
+            </p>
+
+            <p>
+                Cyberbullying has a profound and devastating effect on the university community, leading many young people to remain silent or unwilling to defend themselves. This occurs at a critical moment of transition to adulthood and professional life.
+                This phenomenon not only harms personal well-being but also transforms university interaction, causing academic dropout due to feelings of insecurity and shame that lead students to abandon their studies. In turn, it causes significant social isolation because they feel vulnerable, and the fear of future online attacks considerably reduces participation in support groups and extracurricular activities that are fundamental for holistic development. Finally, bullying can result in serious psychological consequences, such as intense anxiety, depression, and sleep problems, all of which directly affect concentration, academic performance, and the mental health of those who suffer it. It is important to talk to a psychologist about what you are going through. Therapy can be helpful, and you are not alone in experiencing this. Therapy provides strategies to help you manage these comments or taunts so effectively.
+            </p>
+
+            <div class="ciberacoso-imagen">
+                <img src="imagenes-web/istockphoto-901895052-612x612.jpg" alt="Ciberacoso">
+            </div>
+
+            <h3>The consequences of cyberbullying</h3>
+
+            <p>
+                In universities, online harassment presents a direct impediment to professional advancement because harmful content can damage one's online reputation and impact future job prospects when recruiters investigate the student's name. Students often also stop networking for fear of being targeted again.
+                This situation has a significant negative impact on academic performance, which can result in the loss of scholarships due to poor performance or disillusionment. It also complicates teamwork by excluding students from study groups and causing them to avoid spaces like libraries or laboratories because they perceive the campus as a hostile environment. Finally, serious psychosocial consequences arise that hinder the development of personal identity. These include the onset of migraines or chronic exhaustion before crucial exams and an increased feeling of being neglected by the institution. All of this can lead students to disengage from the educational process due to loneliness and the lack of clear procedures for filing complaints.
+             </p>
+
+
+             <h3>How to prevent it</h3>
+
+             <p>
+                Preventing cyberbullying at university isn't something that can be achieved with a single action; it requires a concerted effort involving everyone, from institutions to each and every one of us as students. At this stage, what's at stake isn't just a grade or a class, but our peace of mind and even our professional future, which is why it's crucial to learn how to navigate the digital world safely and respectfully.
+             </p>  
+
+             <p>
+                (UNICEF. (s. f.))"When bullying occurs online, the victim feels as if they are being attacked everywhere, even in their own home. It may seem like there is no escape. The consequences can be long-lasting and affect the victim in many ways:
+
+Mentally: They feel worried, ashamed, stupid, and even scared or angry.
+
+Emotionally: They feel embarrassed and lose interest in things they enjoy.
+
+Physically: They feel tired (lose sleep) or suffer from stomach aches and headaches.
+Feeling ridiculed or bullied can prevent the victim from speaking openly or trying to resolve the problem. In extreme cases, cyberbullying can lead to suicide."
+             </p>
+
+             <div class="ciberacoso-imagen">
+                <img src="imagenes-web/Cyberbullying-How-to-Prevent-Bullying-in-Online-Schools-1.jpg" alt="Ciber">
+            </div>
+
+             <h3>Taking care of ourselves:</h3>
+
+             <p>
+                The first step
+                Our first line of defense is being mindful of how much we share on social media. It's always a good idea to occasionally review our account privacy settings to control who sees our photos or where we are; ultimately, having a "good digital life" also means protecting our passwords and not letting just anyone into our inner circle. But beyond technical adjustments, the most important thing is common sense. We should think twice before posting or sharing anything, remembering that the internet has a long memory and that what seems like a joke today could become part of our digital footprint tomorrow. If we see a message that attacks someone, the best thing to do is not engage with it or share it; that way we nip the problem in the bud.
+             </p>
+
+             <h3>What should the university do?</h3>
+
+             <p>
+               The university needs to be a place where people feel safe to learn. It's not very useful to have a set of rules locked away in a drawer if no one knows what to do when a problem arises. We need clear support procedures and truly anonymous reporting channels where people feel they will be heard without judgment. It's also vital to offer talks or workshops on online ethics and the legal consequences, so we all understand that what happens online hurts just as much as in real life. Furthermore, it's crucial that the university encourages us not to be complicit; if we see someone being bullied, we should feel supported in reporting it. Fortunately, many universities already have psychologists available to help us when things get out of hand.
+             </p>
+
+             <h3>The value of not being alone</h3>
+
+             <p>
+               Ultimately, what helps most to stop a bully is feeling that we have someone on our side. When wellness departments function effectively and mental health and digital wellbeing are discussed openly, a very strong support network is created. Encouraging study groups where respect comes first helps any violent behavior feel out of place. If a student knows that their teachers, friends, and mental health professionals have their back, the bully loses their power, because their strongest weapon is always isolating the victim. We have to understand that the respect we show in the classroom must be the same respect we show behind a screen, so that technology is something that helps us grow and not something that destroys us.
+             </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO MULTIMEDIA -->
+
+<section class="video-section">
+
+<h2>27% of university students in Colombia have suffered cyberbullying | Current Events</h2>
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/lO5857iVzYQ"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<section class="cyberbullying-section">
+
+<h2 id="cyberbullying">Cyberbullying</h2>
+
+<h3>What is Cyberbullying?</h3>
+<p>
+Cyberbullying refers to harassment or intimidation that occurs through the use of digital platforms, such as social media, messaging apps, or online video games, with the aim of annoying, threatening, or humiliating another person.
+</p>
+
+<h3>Consequences</h3>
+<ul>
+<li>It can affect self-esteem and make the person feel insecure or undervalued.</li>
+<li>It generates anxiety, stress, and emotional distress.</li>
+<li>It can lead to the person becoming isolated and feeling lonely.</li>
+</ul>
+
+<h3>How to Prevent It</h3>
+<ul>
+<li>Evita compartir información personal en internet.</li>
+<li>Block and report users who exhibit aggressive behavior</li>
+<li>Talk to someone you trust, like a family member or friend.</li>
+<li>Promote respect and good treatment in digital spaces.</li>
+</ul>
+
+<!-- INTERACTIVO -->
+<h3>Real Examples (Click to see)</h3>
+
+<div class="ejemplos-container">
+
+<button onclick="mostrarEjemplo(1)">Example 1</button>
+<button onclick="mostrarEjemplo(2)">Example 2</button>
+<button onclick="mostrarEjemplo(3)">Example 3</button>
+
+</div>
+
+<div id="resultadoEjemplo" class="mensaje-ejemplo"></div>
+
+</section>
+
+
+<script>
+function mostrarEjemplo(numero) {
+
+    let mensaje = "";
+
+    if (numero === 1) {
+        mensaje = "Someone keeps sending hurtful or offensive messages again and again on social media.";
+    } 
+    else if (numero === 2) {
+        mensaje = "A person shares private or embarrassing photos of someone without asking for permission.";
+    } 
+    else if (numero === 3) {
+        mensaje = "Someone creates a fake account just to make fun of or insult another person.";
+    }
+
+    document.getElementById("resultadoEjemplo").innerHTML = mensaje;
+}
+</script>
+</header>
+
+
+</body>
+</html>

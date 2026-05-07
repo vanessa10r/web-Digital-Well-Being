@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Wellbeing</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="header-container">
+
+<div class="logo">
+<img src="imagenes-web/f0b4ffb8-26bf-4693-9f41-32cd80c7.png" alt="Website Logo">
+</div>
+
+<nav class="menu">
+<ul>
+
+<li class="has-submenu">
+<a href="#">Home</a>
+    <ul class="submenu">
+        <li><a href="index.html#welcome">Welcome</a></li>
+        <li><a href="index.html#presentation">Project Presentation</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Digital Well-Being</a>
+<ul class="submenu">
+    <li><a href="digital.html#digital-wellbeing">What is digital wellbeing?</a></li>
+    <li><a href="digital.html#healthy-habits">Healthy Habits</a></li>
+    <li><a href="digital.html#digital-tools">Digital tools for productivity</a></li>
+</ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Online Safety</a>
+    <ul class="submenu">
+        <li><a href="online.html#cybersecurity">Cybersecurity</a></li>
+        <li><a href="online.html#self-test">Digital Wellbeing Self Test</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Cyberbullying</a>
+    <ul class="submenu">
+        <li><a href="Ciberacoso.html#what-is-cyberbullying">What is cyberbullying?</a></li>
+        <li><a href="Ciberacoso.html#cyberbullying">Cyberbullying</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Privacy & Data</a>
+    <ul class="submenu">
+        <li><a href="Privacidaddatos.html#personal-data">What is personal data?</a></li>
+        <li><a href="Privacidaddatos.html#data-protection-webinar">Webinar: Best practices in data protection</a></li>
+    </ul>
+</li>
+
+
+<li class="has-submenu">
+    <a href="#">Social Networks</a>
+    <ul class="submenu">
+        <li><a href="redes.html#social-media-use">Responsible use</a></li>
+        <li><a href="redes.html#self-assessment">Final Self-Assessment</a></li>
+    </ul>
+</li>
+
+<li><a href="contacto.html">Contact Us</a></li>
+<li><a href="creditos.html">Credits</a></li>
+
+</ul>
+</nav>
+
+</div>
+</header>
+
+<script>
+document.querySelectorAll('.has-submenu > a').forEach(menu => {
+    menu.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // cerrar otros
+        document.querySelectorAll('.has-submenu').forEach(item => {
+            if(item !== this.parentElement){
+                item.classList.remove('active');
+            }
+        });
+
+        // abrir este
+        this.parentElement.classList.toggle('active');
+    });
+});
+</script>
+
+</div>
+
+</header>
+
+<!-- CYBERSECURITY -->
+
+<section id="ciberseguridad" class="Cybersecurity">
+
+<h2 id="cybersecurity">Cybersecurity</h2>
+
+<div class="ciberseguridad-contenido">
+
+<div class="ciberseguridad-texto">
+
+<p> 
+Today, online criminals are targeting individuals working from home with fake links or emails, taking advantage of unsecured connections and a lack of security measures. They also employ tactics such as information manipulation and social deception techniques to attack users.     
+</p>
+
+<p>
+"Criminals are increasingly targeting domestic workers who may be using unsecured routers, compromised home devices, or who are
+ lulled into a false sense of security. Malicious actors know how to exploit people's vulnerabilities and are rapidly developing
+  new ways to launch their attacks through means such as disinformation, social engineering, and cyberattacks".
+</p>
+<h3>Common Digital Risks</h3>
+
+<p>
+In the digital world we may face identity theft, scams, cyberbullying or exposure to harmful content.
+</p>
+
+<h3>Key findings from the 2025 risk analysis</h3>
+<p>
+ (Universidad Nacional Abierta y a Distancia (UNAD). (2025). "Cybersecurity risk analyses conducted by various institutions and universities throughout 2024 and early 2025 identified five key areas requiring urgent attention:)
+</p>
+
+<p> 
+    1. Insider Threats and Human Error:
+
+According to Verizon's Data Breach Investigations Report (DBIR, 2024), 82% of security breaches are due to human error, such as weak passwords, clicking on deceptive links, or inappropriate use of personal devices. In the university setting, this problem is exacerbated by high user turnover and simultaneous access to multiple systems.
+</p>
+
+<p>
+    2. Ransomware as the Major Operational Threat:
+
+The report addresses the risk of ransomware, and the ENISA system reports that criminal groups are employing double and triple extortion tactics (theft, encryption, and disclosure of data) to force payment. It also states that recent incidents, such as those at the University of Michigan (2024) and the University of Sydney (2025), demonstrate how an attack can disrupt academic services and compromise the confidential information of thousands of students.
+</p>
+
+<p> 
+    3. Artificial Intelligence and Academic Deepfakes:
+
+The IBM X-Force Threat Intelligence Index (2025) indicates that artificial intelligence is being used to create fake emails, impersonate educators, and even solicit fraudulent money transfers. Deepfakes and the uncontrolled use of generative models represent new threats that damage the reputation of institutions and academic integrity.
+</p>
+
+<p>
+    4. Cloud Risks and Loss of Data Control:
+
+68% of universities use cloud services to store sensitive information; however, only 41% have adequately configured security measures (Check Point Cloud Security Report, 2024). Incorrect configurations and a lack of network segmentation are the main causes of accidental data exposure.
+</p>
+
+<p>
+    5. Attacks on Critical University Infrastructure:
+
+The report describes heating systems, security cameras, and Internet of Things (IoT) laboratories as emerging attack vectors. The Cybersecurity and Infrastructure Security Agency (CISA, 2024) warns that university campuses must address these systems as a fundamental part of their risk surface, rather than considering them as isolated elements".
+</p>
+
+
+<h3>Secure Passwords</h3>
+
+<p>
+Strong passwords protect personal information. A secure password should include uppercase letters, lowercase letters, numbers and symbols.
+</p>
+
+<p>
+    (Diana Melo Taborda. (n.d.). Password Management. in Training.) "You will learn best practices for creating and storing strong passwords, using password managers, and implementing robust authentication. You will also learn about access and monitoring policies to protect your organization's digital assets. By the end, you will have the tools to strengthen network security, minimizing potential vulnerabilities and unauthorized access."
+</p>
+ 
+<h3>Personal Data Protection</h3>
+
+<p>
+Users should avoid sharing sensitive information online and review privacy settings on their digital platforms. They should also be mindful of not sharing information in games.
+</p>
+
+<p>
+    (According to the Externado University of Colombia (n.d.)), the report on personal data in Colombia states that the protection of personal information is based on a set of laws designed to ensure respect for individuals' privacy. These regulations establish that any data linked to an individual must be managed according to principles such as legality, purpose, and the prior consent of the owner. In other words, no institution has the authority to collect, store, or use personal information without clear and explicit permission.
+
+Furthermore, data is divided into different categories according to its degree of sensitivity. There is public data, which is accessible without limitations; semi-private data, which may be of interest to certain groups; private data, which belongs to the individual's personal sphere; and sensitive data, which requires special protection because it may affect fundamental rights, such as health, sexual orientation, or other sensitive personal information.
+
+This framework also recognizes rights for data owners, such as the right to know, update, correct, or even delete their data from databases. Taken together, these regulations seek to strike a balance between the use of information in digital environments and the protection of privacy, especially in a scenario where data management is becoming increasingly common.
+</p>
+
+</div>
+
+<div class="ciberseguridad-imagen">
+
+<img src="imagenes-web/Ciberseguridad.png" alt="Cybersecurity image">
+</div>
+
+</div>
+
+</section>
+<!-- VIDEO MULTIMEDIA -->
+
+<section class="video-section">
+
+<h2>ciberseguridad Video</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3G8yJaudGC0?si=c-rCOTG_FrDAKZa-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<!-- TEST -->
+
+<section class="test-bienestar">
+
+<h2 id="self-test">Digital Wellbeing Self Test</h2>
+
+<form id="formTest">
+
+<p>1. What do you usually do right after waking up in the morning?</p>
+
+<label><input type="radio" name="t1" value="A"> I usually check my phone immediately.</label><br>
+<label><input type="radio" name="t1" value="B"> I wait for a while before checking it (around 30 minutes).</label><br>
+<label><input type="radio" name="t1" value="C"> I start my morning routine before using my phone.</label>
+
+<p>2. Do you have spaces or moments at home where you avoid using WiFi or digital devices?</p>
+
+<label><input type="radio" name="t2" value="A"> No, I normally use my phone everywhere.</label><br>
+<label><input type="radio" name="t2" value="B"> Sometimes I try to avoid using devices.</label><br>
+<label><input type="radio" name="t2" value="C"> Yes, I have specific spaces or moments without devices.</label>
+
+<p>3. How would you describe the security of your main password?</p>
+
+<label><input type="radio" name="t3" value="A"> It is very simple and easy to remember.</label><br>
+<label><input type="radio" name="t3" value="B"> It is secure, but I use it on several accounts.</label><br>
+<label><input type="radio" name="t3" value="C"> It is strong and different for each account.</label>
+
+<p>4. Which social media platform do you use the most in your daily life?</p>
+
+<label><input type="radio" name="t4" value="Tiktok"> TikTok</label><br>
+<label><input type="radio" name="t4" value="Facebook"> Facebook</label><br>
+<label><input type="radio" name="t4" value="Instagram"> Instagram</label>
+
+<br><br>
+
+<button type="button" id="btnTest">View Result</button>
+
+</form>
+
+<h3 id="resultadoTest"></h3>
+
+</section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página</title>
+</head>
+
+</header>
+</body>
+</html>

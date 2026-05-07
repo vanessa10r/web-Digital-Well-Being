@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Well-Being</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<div class="header-container">
+
+<div class="logo">
+<img src="imagenes-web/f0b4ffb8-26bf-4693-9f41-32cd80c7.png" alt="Logo de mi web">
+</div>
+
+<nav class="menu">
+<ul>
+
+<li class="has-submenu">
+<a href="#">Home</a>
+    <ul class="submenu">
+        <li><a href="index.html#welcome">Welcome</a></li>
+        <li><a href="index.html#presentation">Project Presentation</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Digital Well-Being</a>
+<ul class="submenu">
+    <li><a href="digital.html#digital-wellbeing">What is digital wellbeing?</a></li>
+    <li><a href="digital.html#healthy-habits">Healthy Habits</a></li>
+    <li><a href="digital.html#digital-tools">Digital tools for productivity</a></li>
+</ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Online Safety</a>
+    <ul class="submenu">
+        <li><a href="online.html#cybersecurity">Cybersecurity</a></li>
+        <li><a href="online.html#self-test">Digital Wellbeing Self Test</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Cyberbullying</a>
+    <ul class="submenu">
+        <li><a href="Ciberacoso.html#what-is-cyberbullying">What is cyberbullying?</a></li>
+        <li><a href="Ciberacoso.html#cyberbullying">Cyberbullying</a></li>
+    </ul>
+</li>
+
+<li class="has-submenu">
+    <a href="#">Privacy & Data</a>
+    <ul class="submenu">
+        <li><a href="Privacidaddatos.html#personal-data">What is personal data?</a></li>
+        <li><a href="Privacidaddatos.html#data-protection-webinar">Webinar: Best practices in data protection</a></li>
+    </ul>
+</li>
+
+
+<li class="has-submenu">
+    <a href="#">Social Networks</a>
+    <ul class="submenu">
+        <li><a href="redes.html#social-media-use">Responsible use</a></li>
+        <li><a href="redes.html#self-assessment">Final Self-Assessment</a></li>
+    </ul>
+</li>
+
+<li><a href="contacto.html">Contact Us</a></li>
+<li><a href="creditos.html">Credits</a></li>
+
+</ul>
+</nav>
+
+</div>
+</header>
+
+<script>
+document.querySelectorAll('.has-submenu > a').forEach(menu => {
+    menu.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // cerrar otros
+        document.querySelectorAll('.has-submenu').forEach(item => {
+            if(item !== this.parentElement){
+                item.classList.remove('active');
+            }
+        });
+
+        // abrir este
+        this.parentElement.classList.toggle('active');
+    });
+});
+</script>
+
+</div>
+
+<!-- SOCIAL MEDIA -->
+
+<section id="redes" class="social-media">
+
+    <div class="social-media-contenido">
+            <div class="social-media-texto">
+                <h2 id="social-media-use">Responsible use of social media</h2>
+                <p> 
+                    Ultimately, it involves transforming these platforms into spaces for positive connection and learning instead of sources of anxiety or distraction. Becoming a responsible user means being mindful of our digital footprint, verifying information before sharing it, and protecting our privacy.
+                </p>
+                
+                <p>
+                    (Alba Zulay Cárdenas Escobar. (n.d.) ) She describes in the report that "knowledge of risks and privacy management are perhaps the most effective tools for the adequate protection of rights and freedoms in the digital environment. By reading Good Practices in the Use of Social Networks, the reader receives recommendations to build a responsible digital identity, materialized from the content they see and publish, in their role as a prosumer; with whom and when they interact; and especially the way in which they should safeguard and protect their personal data as a primary and fundamental action to minimize the risks of violations to which they are exposed when using them."
+                </p>
+                
+                <p> 
+                    It is crucial to recognize that the dangers in the digital space are real and ever-present in the daily use of social media platforms. Therefore, it is not advisable to blindly trust everything found on the web or the individuals with whom you communicate online. Learning about privacy, protecting personal information, and being mindful of the type of content you share can significantly reduce the risk of becoming a victim of scams, identity theft, or data breaches. In this context, acting with caution and responsibility becomes an essential tool for navigating the digital world safely.
+                </p>
+                
+                
+                <h3>Impact on self-esteem</h3>
+
+                <p>
+                    Social media can affect self-esteem because people often compare themselves with the “perfect lives” they see online. It is important to remember that most content is edited and does not show reality completely.
+                </p>
+                
+                <p>
+                    For university students, the constant use of social media is very important, as it can significantly influence how they perceive themselves. Often, seeing posts from others who seem to have perfect lives sparks comparisons: why do they have everything and they don't? This can generate insecurity or low self-esteem. It's easy to forget that most of what's shared online is edited or only shows the best moments of their lives. Therefore, it's important to be aware of this and not measure our self-worth based on what we see on social media; it's not always what we see. Maintaining a more realistic perspective and focusing on one's own achievements helps protect self-esteem and emotional well-being. This is quite important because people don't share when they're sad or struggling; they only share the good things, trips, and accomplishments, not the whole process.
+                </p>
+                
+                
+                <h3>Critical Content Consumption</h3>
+                
+                <p>
+                    Critical consumption means analyzing the information we see online before believing or sharing it. It is important to verify sources and understand the purpose of the content we read.
+                </p>
+                
+                <p>
+                    Critical consumption means not immediately believing everything you see online. Before accepting or sharing any information, it's important to pause and consider whether it's truly reliable and whether the information is genuine, not false, or if it's something harmful or a disguised version of the content. Checking the source, comparing it with other sources, and trying to fully understand the message helps avoid falling for false or misinterpreted information. In short, it's not just about reading, but about understanding what you're seeing and being responsible for what you share.
+                </p>
+            </div>
+
+
+    <!-- IMÁGENES-->
+    <div class="redes-imagen">
+
+        <div class="bloque-imagen">
+            <img src="imagenes-web/redes sociales.jpg" alt="Redes sociales">
+        </div>
+
+        <div class="bloque-imagen">
+            <img src="imagenes-web/Comunicacion-calculadora.png" alt="Comunicación">
+        </div>
+
+        <div class="bloque-imagen">
+            <img src="imagenes-web/autoestima(1).jpg" alt="Autoestima">
+        </div>
+
+        <div class="bloque-imagen">
+            <img src="imagenes-web/redessociales(1).png" alt="Social media">
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+
+    <h2>Let's talk about the responsible use of social media</h2>
+
+    <iframe 
+        width="560" height="315"
+        src="https://www.youtube.com/embed/BVZ5lzhqy4g"
+        title="YouTube video player"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+
+<!-- FINAL EVALUATION -->
+
+<section id="evaluacion" class="evaluacion-final">
+
+<h2 id="self-assessment">Final Self-Assessment</h2>
+
+<form id="formEvaluacion">
+
+<h3>1. In your opinion, what does digital wellbeing mean?</h3>
+
+<label><input type="radio" name="e1" value="A"> Maintaining a healthy balance between technology and daily life.</label><br>
+<label><input type="radio" name="e1" value="B"> Trying to balance technology use.</label><br>
+<label><input type="radio" name="e1" value="C"> Using technology without limits.</label>
+
+
+<h3>2. Is mental health important online?</h3>
+
+<label><input type="radio" name="e2" value="A"> Yes</label><br>
+<label><input type="radio" name="e2" value="B"> Sometimes</label><br>
+<label><input type="radio" name="e2" value="C"> No</label>
+
+
+<h3>3. Do you manage your screen time?</h3>
+
+<label><input type="radio" name="e3" value="A"> Yes</label><br>
+<label><input type="radio" name="e3" value="B"> Sometimes</label><br>
+<label><input type="radio" name="e3" value="C"> No</label>
+
+<br><br>
+
+<button type="button" id="verConsejo">See Reflection</button>
+
+</form>
+
+<div id="resultadoFinal"></div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+<p>© 2026 Digital Wellbeing Project</p>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+document.getElementById("verConsejo").addEventListener("click",function(){
+
+let respuestas=document.querySelectorAll('#formEvaluacion input[type="radio"]:checked');
+
+if(respuestas.length<3){
+alert("Please answer all questions");
+return;
+}
+
+let consejo="Reflection:<br>";
+
+respuestas.forEach(r=>{
+
+if(r.value==="A"){consejo+="Great digital habits.<br>";}
+if(r.value==="B"){consejo+="You are improving your digital balance.<br>";}
+if(r.value==="C"){consejo+="Consider improving your digital wellbeing habits.<br>";}
+
+});
+
+document.getElementById("resultadoFinal").innerHTML=consejo;
+
+});
+
+</script>
+
+</body>
+</html>
